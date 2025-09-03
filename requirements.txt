@@ -1,0 +1,6 @@
+beautifulsoup4==4.12.3
+lxml==5.2.2
+PyYAML==6.0.2
+requests==2.32.3
+tenacity==9.0.0
+playwright==1.47.2 # volitelné (zapni přes USE_PLAYWRIGHT=true)
