@@ -1,0 +1,15 @@
+sites:
+- name: Garmin Smartwatches (US)
+url: https://www.garmin.com/en-US/c/wearables/smartwatches/
+keywords: [Forerunner, Fēnix, Fenix, Instinct, Tactix, Enduro, Venu, Vivoactive, MARQ]
+interval: 300 
+
+- name: Garminrumors
+url: https://garminrumors.com
+keywords: [Forerunner, Fēnix, Fenix, Instinct, Tactix, Enduro, Venu, Vivoactive, MARQ]
+interval: 300
+
+- name: The5krunner
+url: https://the5krunner.com
+keywords: [Forerunner, Fēnix, Fenix, Instinct, Tactix, Enduro, Venu, Vivoactive, MARQ]
+interval: 300
