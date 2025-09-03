@@ -1,9 +1,24 @@
 services:
-- type: worker
-name: watch-bot
-runtime: python
-plan: starter
-buildCommand: pip install -r requirements.txt && python -m playwright install --with-deps
-startCommand: python app.py
-envVars:
-- key: TELEGRAM_TOKEN
+  - type: worker
+    name: watch-bot
+    env: python
+    buildCommand: "pip install -r requirements.txt && python -m playwright install --with-deps"
+    startCommand: "python app.py"
+    plan: starter
+    envVars:
+      - key: TELEGRAM_TOKEN
+        sync: false
+      - key: TELEGRAM_CHAT_ID
+        sync: false
+      - key: DB_PATH
+        value: /data/seen.sqlite3
+      - key: CONFIG_PATH
+        value: sites.yaml
+      - key: LOG_LEVEL
+        value: INFO
+      - key: USE_PLAYWRIGHT
+        value: "false"
+    disk:
+      name: bot-data
+      mountPath: /data
+      sizeGB: 1
