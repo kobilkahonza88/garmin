@@ -6,5 +6,4 @@ plan: starter
 buildCommand: pip install -r requirements.txt && python -m playwright install --with-deps
 startCommand: python app.py
 envVars:
-- key: 8392040450:AAHFEHMA2TIwvKtp3FUPJ1oeI_HMT-TDfMM
-s
+- key: TELEGRAM_TOKEN
